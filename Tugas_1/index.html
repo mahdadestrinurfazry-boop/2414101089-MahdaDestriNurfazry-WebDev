@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisata Ciboer Pass Majalengka</title>
+    <style>
+        /* CSS Modern & Responsif */
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; line-height: 1.6; background: #f4f4f4; }
+        
+        /* Navigasi */
+        nav { background: #ff9800; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        nav ul { list-style: none; display: flex; justify-content: center; margin: 0; padding: 0; flex-wrap: wrap; }
+        nav ul li a { color: white; text-decoration: none; padding: 15px 20px; display: block; font-weight: bold; font-size: 14px; transition: 0.3s; }
+        nav ul li a:hover { background: #e68a00; }
+
+        /* Banner Kolase */
+        .banner-kolase { display: grid; grid-template-columns: 2fr 1fr; gap: 10px; padding: 20px; max-width: 1200px; margin: auto; }
+        .banner-kolase img { width: 100%; border-radius: 12px; object-fit: cover; transition: 0.3s; }
+        .banner-kolase img:hover { transform: scale(1.01); }
+        .foto-utama { height: 410px; }
+        .foto-samping { display: flex; flex-direction: column; gap: 10px; }
+        .foto-samping img { height: 200px; }
+
+        /* Konten Utama */
+        .container { max-width: 1200px; margin: auto; display: grid; grid-template-columns: 2fr 1fr; gap: 30px; padding: 20px; }
+        section { background: white; padding: 25px; margin-bottom: 20px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+
+        /* Paket Wisata Card */
+        .card-paket { display: flex; gap: 20px; border: 1px solid #eee; padding: 15px; border-radius: 10px; margin-top: 15px; transition: 0.3s; }
+        .card-paket:hover { border-color: #ff9800; background: #fffaf2; }
+        .card-paket img { width: 180px; height: 120px; border-radius: 8px; object-fit: cover; }
+        .harga { color: #e67e22; font-weight: bold; font-size: 1.2em; margin-top: 5px; }
+
+        /* Desain Tombol Link Video Menarik */
+        .btn-video {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(45deg, #ff0000, #cc0000);
+            color: white !important;
+            text-decoration: none;
+            padding: 15px 20px;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 0, 0, 0.2);
+            margin-top: 10px;
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .btn-video:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 0, 0, 0.4);
+            filter: brightness(1.1);
+        }
+        .icon-play { margin-right: 10px; font-size: 1.2em; }
+
+        /* Responsif untuk HP */
+        @media (max-width: 768px) {
+            .banner-kolase, .container, .card-paket { grid-template-columns: 1fr; flex-direction: column; }
+            .foto-utama { height: 250px; }
+            .card-paket img { width: 100%; height: 200px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header style="text-align: center; padding: 40px 10px; background: white;">
+        <h1 style="margin:0; color: #333; font-size: 2.5em;">Desa Wisata Ciboer Pass</h1>
+        <p style="color: #666; font-size: 1.1em;">Menikmati Keindahan Terasering Sawah Majalengka</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#obyek">Obyek Wisata</a></li>
+            <li><a href="#paket">Paket Wisata</a></li>
+            <li><a href="#pesan">Pemesanan</a></li>
+            <li><a href="#galeri">Galery</a></li>
+        </ul>
+    </nav>
+
+    <div id="home" class="banner-kolase">
+        <img src="images/wisata1.jpeg" class="foto-utama" alt="Ciboer Pass">
+        <div class="foto-samping">
+            <img src="images/wisata2.jpeg" alt="View 1">
+            <img src="images/wisata3.jpeg" alt="View 2">
+        </div>
+    </div>
+
+    <div class="container">
+        <main>
+            <section id="about">
+                <h2>🌿 Tentang Ciboer Pass</h2>
+                <p>Ciboer Pass adalah destinasi wisata alam yang menyuguhkan pemandangan terasering sawah yang mirip dengan Ubud, Bali. Terletak di Desa Bantaragung, Majalengka, tempat ini menawarkan udara sejuk dan spot foto yang memanjakan mata.</p>
+            </section>
+
+            <section id="obyek">
+                <h2>📸 Obyek Wisata</h2>
+                <p>Nikmati berbagai aktivitas menarik seperti jalur trekking sawah, bermain di sungai jernih, dan berburu foto estetik di sepanjang terasering.</p>
+            </section>
+
+            <section id="paket">
+                <h2>🎟️ Daftar Paket Wisata</h2>
+                
+                <div class="card-paket">
+                    <img src="images/wisata5.jpeg" alt="Paket Villa">
+                    <div>
+                        <h3>Paket Staycation Villa</h3>
+                        <p>📅 Tersedia: Setiap Hari</p>
+                        <p>Fasilitas villa dengan view langsung ke sawah dan sarapan gratis.</p>
+                        <div class="harga">Rp500.000 / Malam</div>
+                    </div>
+                </div>
+
+                <div class="card-paket">
+                    <img src="images/wisata6.jpeg" alt="Paket Camping">
+                    <div>
+                        <h3>Paket Camping Ceria</h3>
+                        <p>📅 Tersedia: Sabtu - Minggu</p>
+                        <p>Termasuk tenda, api unggun, dan tiket masuk area camping.</p>
+                        <div class="harga">Rp150.000 / Orang</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="pesan">
+                <h2>📞 Pemesanan</h2>
+                <p>Hubungi WhatsApp resmi kami untuk reservasi dan informasi lebih lanjut:</p>
+                <p><strong>WA: 0896-7362-1516</strong></p>
+            </section>
+        </main>
+
+        <aside>
+            <section>
+                <h3>🎬 Video Aktivitas</h3>
+                <p>Lihat keseruan suasana di Ciboer Pass melalui link video berikut:</p>
+                
+                <a href="https://www.youtube.com/watch?v=yb9ibNZLbxs" target="_blank" class="btn-video">
+                    <span class="icon-play">▶</span> Tonton di YouTube
+                </a>
+                
+                <p style="margin-top: 15px;"><small>Klik tombol di atas untuk membuka video dokumentasi.</small></p>
+            </section>
+
+            <section id="galeri">
+                <h3>🖼️ Galeri Foto</h3>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                    <img src="images/wisata4.jpeg" width="100%" style="border-radius: 8px;">
+                    <img src="images/wisata2.jpeg" width="100%" style="border-radius: 8px;">
+                </div>
+            </section>
+        </aside>
+    </div>
+
+    <footer style="background: #333; color: white; text-align: center; padding: 30px; margin-top: 30px;">
+        <p>&copy; 2025 Wisata Ciboer Pass - Tugas Implementasi UI</p>
+    </footer>
+
+</body>
+</html>
